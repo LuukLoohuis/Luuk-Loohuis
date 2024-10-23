@@ -2,89 +2,146 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koerspoule</title>
+    <title>ProCyclingStats Clone</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header sectie -->
+    <!-- Header -->
     <header>
-        <h1>Welkom bij Koerspoule</h1>
+        <h1>ProCyclingStats</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#poule">Poule Overzicht</a></li>
-                <li><a href="#inschrijven">Inschrijven</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#results">Wedstrijduitslagen</a></li>
+                <li><a href="#riders">Renners</a></li>
+                <li><a href="#teams">Teams</a></li>
+                <li><a href="#rankings">Rankings</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Home sectie -->
+    <!-- Home / Overview Section -->
     <section id="home">
-        <h2>Wat is de Koerspoule?</h2>
-        <p>De Koerspoule is dé plek om mee te doen aan voorspellingen rondom de grootste wielerwedstrijden ter wereld. Maak je eigen poule aan of doe mee aan een bestaande poule en daag je vrienden uit!</p>
+        <h2>Welkom bij ProCyclingStats</h2>
+        <p>Bekijk de nieuwste wieleruitslagen, rennersprofielen, en teamstatistieken van het huidige seizoen.</p>
     </section>
 
-    <!-- Poule Overzicht sectie -->
-    <section id="poule">
-        <h2>Actuele Poules</h2>
+    <!-- Results Section -->
+    <section id="results">
+        <h2>Recente Uitslagen</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Poule Naam</th>
-                    <th>Aantal Deelnemers</th>
-                    <th>Status</th>
-                    <th>Bekijk Poule</th>
+                    <th>Wedstrijd</th>
+                    <th>Datum</th>
+                    <th>Eerste</th>
+                    <th>Tweede</th>
+                    <th>Derde</th>
+                    <th>Resultaten</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Tour de France Poule</td>
-                    <td>20</td>
-                    <td>Open</td>
-                    <td><a href="#">Bekijk</a></td>
+                    <td>Ronde van Vlaanderen</td>
+                    <td>7 april 2024</td>
+                    <td>Renner A</td>
+                    <td>Renner B</td>
+                    <td>Renner C</td>
+                    <td><a href="#">Bekijk volledige uitslag</a></td>
                 </tr>
                 <tr>
-                    <td>Vuelta Poule</td>
-                    <td>15</td>
-                    <td>Gesloten</td>
-                    <td><a href="#">Bekijk</a></td>
+                    <td>Parijs-Roubaix</td>
+                    <td>14 april 2024</td>
+                    <td>Renner X</td>
+                    <td>Renner Y</td>
+                    <td>Renner Z</td>
+                    <td><a href="#">Bekijk volledige uitslag</a></td>
                 </tr>
             </tbody>
         </table>
     </section>
 
-    <!-- Inschrijven sectie -->
-    <section id="inschrijven">
-        <h2>Schrijf je in voor een nieuwe poule</h2>
-        <form action="/inschrijven" method="POST">
-            <label for="naam">Naam:</label>
-            <input type="text" id="naam" name="naam" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="poule">Selecteer Poule:</label>
-            <select id="poule" name="poule">
-                <option value="tour">Tour de France</option>
-                <option value="vuelta">Vuelta</option>
-            </select>
-
-            <button type="submit">Inschrijven</button>
-        </form>
+    <!-- Riders Section -->
+    <section id="riders">
+        <h2>Top Renners</h2>
+        <div class="rider-profile">
+            <h3>Renner A</h3>
+            <p>Team: Team A</p>
+            <p>Overwinningen: 10</p>
+            <p>Ranking: 1</p>
+            <a href="#">Bekijk profiel</a>
+        </div>
+        <div class="rider-profile">
+            <h3>Renner B</h3>
+            <p>Team: Team B</p>
+            <p>Overwinningen: 7</p>
+            <p>Ranking: 2</p>
+            <a href="#">Bekijk profiel</a>
+        </div>
+        <!-- Meer rennersprofielen -->
     </section>
 
-    <!-- Contact sectie -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Heb je vragen? Neem contact op via <a href="mailto:info@koerspoule.nl">info@koerspoule.nl</a>.</p>
+    <!-- Teams Section -->
+    <section id="teams">
+        <h2>Top Teams</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Overwinningen</th>
+                    <th>Top 10-plaatsen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Team A</td>
+                    <td>20</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Team B</td>
+                    <td>15</td>
+                    <td>40</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Rankings Section -->
+    <section id="rankings">
+        <h2>UCI Rankings</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Positie</th>
+                    <th>Renner</th>
+                    <th>Team</th>
+                    <th>Punten</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Renner A</td>
+                    <td>Team A</td>
+                    <td>2500</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Renner B</td>
+                    <td>Team B</td>
+                    <td>2300</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Koerspoule. Alle rechten voorbehouden.</p>
+        <p>&copy; 2024 ProCyclingStats Clone. Alle rechten voorbehouden.</p>
     </footer>
+
 </body>
 </html>
+
