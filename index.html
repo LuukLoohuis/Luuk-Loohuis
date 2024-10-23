@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koerspoule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header sectie -->
+    <header>
+        <h1>Welkom bij Koerspoule</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#poule">Poule Overzicht</a></li>
+                <li><a href="#inschrijven">Inschrijven</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home sectie -->
+    <section id="home">
+        <h2>Wat is de Koerspoule?</h2>
+        <p>De Koerspoule is dé plek om mee te doen aan voorspellingen rondom de grootste wielerwedstrijden ter wereld. Maak je eigen poule aan of doe mee aan een bestaande poule en daag je vrienden uit!</p>
+    </section>
+
+    <!-- Poule Overzicht sectie -->
+    <section id="poule">
+        <h2>Actuele Poules</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Poule Naam</th>
+                    <th>Aantal Deelnemers</th>
+                    <th>Status</th>
+                    <th>Bekijk Poule</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tour de France Poule</td>
+                    <td>20</td>
+                    <td>Open</td>
+                    <td><a href="#">Bekijk</a></td>
+                </tr>
+                <tr>
+                    <td>Vuelta Poule</td>
+                    <td>15</td>
+                    <td>Gesloten</td>
+                    <td><a href="#">Bekijk</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Inschrijven sectie -->
+    <section id="inschrijven">
+        <h2>Schrijf je in voor een nieuwe poule</h2>
+        <form action="/inschrijven" method="POST">
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="poule">Selecteer Poule:</label>
+            <select id="poule" name="poule">
+                <option value="tour">Tour de France</option>
+                <option value="vuelta">Vuelta</option>
+            </select>
+
+            <button type="submit">Inschrijven</button>
+        </form>
+    </section>
+
+    <!-- Contact sectie -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Heb je vragen? Neem contact op via <a href="mailto:info@koerspoule.nl">info@koerspoule.nl</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Koerspoule. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>
